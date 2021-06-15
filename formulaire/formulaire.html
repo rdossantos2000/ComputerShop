@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css_tp_Ricardo_Blaise.css" />
+    <link rel="stylesheet" href="../formulaire/formulaire.css" />
+    <title>Formulaire</title>
+</head>
+
+<body id="bg3">
+    <header>
+        <img src="../image/logo-final.jpg" alt="logo">
+        <input type="search" name="searchBar" id="searchBar" placeholder="Search...">
+        <input type="submit" value="Search">
+        <a href="../formulaire/formulaire.html">
+            <p>Login / Signup</p>
+        </a>
+    </header>
+    <nav>
+        <a href="../index/index.html">Accueil</a>
+        <a href="../produit/produit.html">Magasiner</a>
+        <a href="../catalogue/catalogue.html">Catalogue</a>
+        <a href="#">Contacte-nous</a>
+        <a href="#">Securite</a>
+        <a href="#">Politique de Retour</a>
+    </nav>
+    <main class="formulaire">
+        <aside>
+            <div id="aside_form">
+                <div id="aside_form_container">
+                    <img src="../image/form_aside_image.png" alt="aside">
+                    <p></p>
+                </div>
+            </div>
+        </aside>
+        <form action="computer_shop.php" method="post">
+            <fieldset>
+                <legend>Formulaire</legend>
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" class="form-input-field" id="nom" value="" placeholder="Nom"
+                        required="required" maxlength="30" autofocus />
+                </div>
+                <div>
+                    <label for="prenom">Prenom</label>
+                    <input type="text" name="prenom" class="form-input-field" id="prenom" value="" placeholder="Prenom"
+                        required="required" maxlength="30" />
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" min="1" max="99" placeholder="Age" id="age" />
+                </div>
+                <div>
+                    <label for="courriel">Courriel</label>
+                    <input type="text" name="courriel" class="form-input-field" id="courriel" value=""
+                        placeholder="Courriel" required="required" maxlength="50" />
+                </div>
+                <div>
+                    <label for="telephone">Telephone</label>
+                    <input type="text" name="telephone" class="form-input-field" id="telephone" value=""
+                        placeholder="514-222-9999" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" required="required" />
+                </div>
+                <div>
+                    <label for="code_postal">Code Postal</label>
+                    <input type="text" name="code_postal" class="form-input-field" id="code_postal" value=""
+                        placeholder="Code postal" />
+                </div>
+                <div>
+                    <label for="city">Province</label>
+                    <input list="province" type="text" placeholder="Province" id="city" />
+                    <datalist id="province">
+                        <option value="Alberta">Alberta</option>
+                        <option value="British Columbia">British Columbia</option>
+                        <option value="Manitoba">Manitoba</option>
+                        <option value="New Brunswick">New Brunswick</option>
+                        <option value="Newfoundland">Newfoundland</option>
+                        <option value="Nova Scotia">Nova Scotia</option>
+                        <option value="Ontario">Ontario</option>
+                        <option value="Prince Edward Island">Prince Edward Island</option>
+                        <option value="Quebec">Québec</option>
+                        <option value="Saskatchewan">Saskatchewan</option>
+                    </datalist>
+                </div>
+                <div>
+                    <span>Recevez votre confirmation par</span>
+                    <input type="radio" name="radio" id="courriel_confirmation" checked />
+                    <label for="notification" class="notification">Courriel</label>
+                    <input type="radio" name="radio" id="notification" />
+                    <label for="notification" class="notification">Message</label>
+                    <input type="radio" name="radio" id="message" />
+                    <label for="notification" class="notification">Ce n'est pas nécessaire</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="save_info" id="save_info" />
+                    <label for="save_info" class="checkbox">se rappeler de mes informations</label>
+                </div>
+                <button type="submit" value="Submit">Submit</button>
+                <button type="reset" value="reset">Cancel</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div> <a href="index.html"><img src="../image/logo-final.jpg" alt="logo"></a></div>
+
+        <div class="localisation">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.8093034254043!2d-73.55346228456756!3d45.52553557910171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91ba4da67d76d%3A0x1db0033612c25bfe!2s2100%20Boul.%20de%20Maisonneuve%20E%2C%20Montr%C3%A9al%2C%20QC%20H2K%204S1!5e1!3m2!1sfr!2sca!4v1597850394288!5m2!1sfr!2sca"
+                width="200" height="200" style="border:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="img">
+
+            <a href="https://www.facebook.com"><img src="../image/footer-icons/facebook.jpg" alt="facebook-icon"></a>
+            <a href="https://www.instagram.com"><img src="../image/footer-icons/instagram.jpg" alt="instagram-icon"></a>
+            <a href="https://www.linkedin.com"><img src="../image/footer-icons/Linkedin.jpg" alt="linkedin-icon"></a>
+            <a href="https://www.twitter.com"><img src="../image/footer-icons/Twitter_Bird.jpg" alt="twitter-icon">
+            </a>
+        </div>
+    </footer>
+</body>
+
+
+
+</html>
